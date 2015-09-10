@@ -1,0 +1,31 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#AAAAAA" >
+
+    
+<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:background="#FFF" >
+    <com.xc.xcskin.view.XCScrollTitleView
+        android:id="@+id/scrollTitleView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    
+    <android.support.v4.view.ViewPager
+        android:id="@+id/myViewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#EFEFEF"
+        android:visibility="visible" />
+</LinearLayout>
+    
+    
+        
+    
+
+</RelativeLayout>

@@ -1,0 +1,36 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:android_custom="http://schemas.android.com/apk/res/com.xc.xcskin"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:padding="5dp"
+        android:layout_margin="10dp"
+        android:text="体验" />
+    
+	<com.xc.xcskin.view.XCRoundProgressBar
+        android:id="@+id/roundProgressBar"   
+        android:layout_width="80dip"   
+        android:layout_height="80dip"   
+        android_custom:roundColor="#A4E786"
+        android_custom:innerRoundColor="#E0F8D8"  
+        android:layout_centerInParent="true" 
+        android_custom:roundProgressColor="#5BD429"   
+        android_custom:textColor="#346AE0"   
+        android_custom:textIsDisplayable="true"   
+        android_custom:roundWidth="10dip"  
+        android_custom:textSize="18sp" >
+    </com.xc.xcskin.view.XCRoundProgressBar>
+    
+    
+    
+        
+    
+
+</RelativeLayout>

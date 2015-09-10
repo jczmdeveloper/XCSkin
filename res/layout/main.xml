@@ -1,0 +1,146 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:android_custom="http://schemas.android.com/apk/res/com.xc.xcskin"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical" >
+
+        <com.xc.xcskin.view.XCAutoNewlineLayout
+            android:id="@+id/auto_newline_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp" >
+
+            <Button
+                android:id="@+id/btn_round_progress_bar_demo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="圆环百分比进度条" />
+
+            <Button
+                android:id="@+id/btn_progress_bar_demo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="水平百分比进度条" />
+
+            <Button
+                android:id="@+id/btn_drop_down_list_view_demo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="下拉列表框控件" />
+
+            <Button
+                android:id="@+id/btn_slide_show_demo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="广告轮播图View" />
+
+            <Button
+                android:id="@+id/btn_horizon_scroll_view_demo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="水平滚动View(仿ViewPager效果)" />
+
+            <Button
+                android:id="@+id/btn_aoto_newline_layout_demo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="自动换行布局控件" />
+
+
+            <Button
+                android:id="@+id/btn_gesture_controller_view_demo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="手势控制器View" />
+
+            <Button
+                android:id="@+id/btn_scroll_title_View_demo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="仿UC设置页滑动标签View" />
+
+            <Button
+                android:id="@+id/btn_round_imageview_demo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="圆形ImageView" />
+
+            <Button
+                android:id="@+id/btn_round_rect_imageview_demo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="圆角矩形ImageView" />
+
+            <Button
+                android:id="@+id/btn_arc_progressbar_demo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="开口圆环进度条View" />
+
+            <Button
+                android:id="@+id/btn_round_oval_imageview_demo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="自定义圆形、圆角矩形、椭圆ImageView" />
+
+            <Button
+                android:id="@+id/btn_slidemenu_view_demo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="自定义侧滑菜单View（仿QQ5.0）" />
+
+            <Button
+                android:id="@+id/btn_sinking_view_demo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="球形水波上升进度条View" />
+
+            <Button
+                android:id="@+id/btn_round_oval_imageview_demo2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="自定义圆形、圆角矩形、椭圆ImageView2" />
+            <Button
+                android:id="@+id/btn_guaguaka_view_demo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="自定义刮刮卡效果View" />
+            <Button
+                android:id="@+id/btn_arcmenu_view_demo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="卫星式菜单View" />
+            
+            <Button
+                android:id="@+id/btn_flowlayout_demo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="流式布局和热门标签" />
+            <Button
+                android:id="@+id/btn_curtain_view_demo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="下拉窗帘View" />
+            <Button
+                android:id="@+id/btn_login_view_demo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="登录窗口拖动效果View" />
+            <Button
+                android:id="@+id/btn_round_pieview_demo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="仿微信动态圆饼图View" />
+        </com.xc.xcskin.view.XCAutoNewlineLayout>
+    </ScrollView>
+
+</LinearLayout>
