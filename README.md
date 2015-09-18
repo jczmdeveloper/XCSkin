@@ -14,3 +14,7 @@
 卫星式菜单控件，热门标签控件
 
 仿微信动态圆饼图控件，底部弹窗控件
+
+效果图如下：
+
+![image](https://github.com/jczmdeveloper/XCSkin/blob/master/screenshots/01.png)
