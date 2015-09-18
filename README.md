@@ -29,4 +29,6 @@
 
 ![image](https://github.com/jczmdeveloper/XCSkin/blob/master/screenshots/11.png)![image](https://github.com/jczmdeveloper/XCSkin/blob/master/screenshots/12.png)
 
+![image](https://github.com/jczmdeveloper/XCSkin/blob/master/screenshots/13.png)![image](https://github.com/jczmdeveloper/XCSkin/blob/master/screenshots/14.png)
+
 
