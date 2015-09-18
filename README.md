@@ -23,4 +23,10 @@
 
 ![image](https://github.com/jczmdeveloper/XCSkin/blob/master/screenshots/05.png)![image](https://github.com/jczmdeveloper/XCSkin/blob/master/screenshots/06.png)
 
+![image](https://github.com/jczmdeveloper/XCSkin/blob/master/screenshots/07.png)![image](https://github.com/jczmdeveloper/XCSkin/blob/master/screenshots/08.png)
+
+![image](https://github.com/jczmdeveloper/XCSkin/blob/master/screenshots/09.png)![image](https://github.com/jczmdeveloper/XCSkin/blob/master/screenshots/10.png)
+
+![image](https://github.com/jczmdeveloper/XCSkin/blob/master/screenshots/11.png)![image](https://github.com/jczmdeveloper/XCSkin/blob/master/screenshots/12.png)
+
 
