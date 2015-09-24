@@ -17,7 +17,7 @@
 
 效果图如下：
 
-![image](https://github.com/jczmdeveloper/XCSkin/blob/master/screenshots/00.gif)![
+![image](https://github.com/jczmdeveloper/XCSkin/blob/master/screenshots/00.gif)
 
 ![image](https://github.com/jczmdeveloper/XCSkin/blob/master/screenshots/01.png)![image](https://github.com/jczmdeveloper/XCSkin/blob/master/screenshots/02.png)
 
