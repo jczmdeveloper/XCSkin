@@ -23,12 +23,11 @@ public class XCRoundAndOvalImageViewDemo2 extends Activity{
         circleImageView = (XCRoundImageViewByXfermode)findViewById(R.id.cicleImageView);
         roundRectImageView = (XCRoundImageViewByXfermode)findViewById(R.id.roundRectImageView);
         ovalImageView = (XCRoundImageViewByXfermode)findViewById(R.id.ovalImageView);
-        
+
         roundRectImageView.setType(XCRoundImageViewByXfermode.TYPE_ROUND);
         roundRectImageView.setRoundBorderRadius(100);
-        
+
         ovalImageView.setType(XCRoundImageViewByXfermode.TYPE_OVAL);
-        ovalImageView.setRoundBorderRadius(50);
-        
+        ovalImageView.setRoundBorderRadius(30);
     }
 }
