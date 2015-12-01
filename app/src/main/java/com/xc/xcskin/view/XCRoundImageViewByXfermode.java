@@ -1,7 +1,5 @@
 package com.xc.xcskin.view;
 
-import java.lang.ref.WeakReference;
-
 import android.content.Context;
 import android.graphics.Bitmap;
 import android.graphics.Bitmap.Config;
@@ -16,6 +14,8 @@ import android.graphics.drawable.Drawable;
 import android.util.AttributeSet;
 import android.util.Log;
 import android.widget.ImageView;
+
+import java.lang.ref.WeakReference;
 /**
  * 使用Xfermode渲染方案实现圆角矩形、椭圆ImageView
  * @author caizhiming
@@ -117,15 +117,18 @@ public class XCRoundImageViewByXfermode extends ImageView{
                 //将准备好的bitmap绘制出来  
                 canvas.drawBitmap(bmp, 0, 0, null);  
                 //bitmap缓存起来，避免每次调用onDraw，分配内存  
-                mBufferBitmap = new WeakReference<Bitmap>(bmp); 
+                mBufferBitmap = new WeakReference<Bitmap>(bmp);
+                drawable.setCallback(null);
             }
-            
+            bmp.recycle();
         }else{
             //如果缓存还存在的情况
             mPaint.setXfermode(null);  
-            canvas.drawBitmap(bmp, 0.0f, 0.0f, mPaint);  
+            canvas.drawBitmap(bmp, 0.0f, 0.0f, mPaint);
+            bmp.recycle();
             return; 
         }
+
     }
     /**
      * 绘制不同的图形Bitmap
@@ -183,5 +186,12 @@ public class XCRoundImageViewByXfermode extends ImageView{
             this.mType = mType;
             invalidate();
         }
+    }
+
+    @Override
+    protected void onDetachedFromWindow() {
+        super.onDetachedFromWindow();
+        mMaskBitmap.recycle();
+        mMaskBitmap = null;
     }
 }
