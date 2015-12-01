@@ -1,0 +1,40 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:android_custom="http://schemas.android.com/apk/res/com.xc.xcskin"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:padding="5dp"
+        android:layout_margin="10dp"
+        android:text="体验" />
+    
+	
+    
+    
+	<com.xc.xcskin.view.XCHorizontalScrollView
+            android:id="@+id/horizontalScrollView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scrollbars="none"
+            android:layout_centerInParent="true"
+           >
+            <LinearLayout
+                android:id="@+id/llViewList"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#DDDDDD"
+                android:orientation="horizontal"
+                android:padding="10dp" >
+            </LinearLayout>
+       </com.xc.xcskin.view.XCHorizontalScrollView>
+        
+        
+    
+
+</RelativeLayout>

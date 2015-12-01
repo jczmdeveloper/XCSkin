@@ -1,0 +1,36 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="55dp"
+        android:orientation="vertical" >
+
+        <com.xc.xcskin.view.XCRoundImageViewByXfermode
+            android:id="@+id/cicleImageView"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/img1" />
+
+        <com.xc.xcskin.view.XCRoundImageViewByXfermode
+            android:id="@+id/roundRectImageView"
+            android:layout_width="125dp"
+            android:layout_height="145dp"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/img2" />
+
+        <com.xc.xcskin.view.XCRoundImageViewByXfermode
+            android:id="@+id/ovalImageView"
+            android:layout_width="140dp"
+            android:layout_height="184dp"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/img3" />
+    </LinearLayout>
+
+</ScrollView>
