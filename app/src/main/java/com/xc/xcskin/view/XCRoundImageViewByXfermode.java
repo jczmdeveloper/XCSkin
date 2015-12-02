@@ -81,7 +81,7 @@ public class XCRoundImageViewByXfermode extends ImageView{
             Log.v("czm","dwidth="+dwidth+",width="+getWidth());
             if(null != drawable){
                 bmp = Bitmap.createBitmap(getWidth(), getHeight(),  
-                        Config.ARGB_8888); 
+                        Config.ARGB_8888);
                 float scale = 1.0f;
                 //创建画布
                 Canvas drawCanvas = new Canvas(bmp);
@@ -134,9 +134,9 @@ public class XCRoundImageViewByXfermode extends ImageView{
      * 绘制不同的图形Bitmap
      */
     private Bitmap getDrawBitmap(){
-        Bitmap bitmap = Bitmap.createBitmap(getWidth(), getHeight(),  
-                Bitmap.Config.ARGB_8888);  
-        Canvas canvas = new Canvas(bitmap);  
+        Bitmap bitmap = Bitmap.createBitmap(getWidth(), getHeight(),
+                Bitmap.Config.ARGB_8888);
+        Canvas canvas = new Canvas(bitmap);
         Paint paint = new Paint(Paint.ANTI_ALIAS_FLAG);  
         paint.setColor(Color.BLACK);  
   
@@ -153,7 +153,7 @@ public class XCRoundImageViewByXfermode extends ImageView{
             canvas.drawOval(new RectF(0, 0, getWidth(), getHeight()), mPaint);
         }
   
-        return bitmap;  
+        return bitmap;
     }
     /**
      * 因为使用了缓存技术，所以需要在invalidate中做些回收释放资源的处理
