@@ -4,7 +4,9 @@ import android.content.Context;
 import android.graphics.Bitmap;
 import android.graphics.Bitmap.Config;
 import android.graphics.Canvas;
+import android.graphics.Color;
 import android.graphics.Paint;
+import android.graphics.PorterDuff;
 import android.graphics.RectF;
 import android.graphics.PorterDuff.Mode;
 import android.graphics.PorterDuffXfermode;
@@ -22,6 +24,7 @@ import android.widget.ImageView;
 public class XCRoundRectImageView extends ImageView{
 
 	private Paint paint;
+    private int mAlpha = 0;
 	
 	public XCRoundRectImageView(Context context) {  
 		this(context,null);  
@@ -34,8 +37,18 @@ public class XCRoundRectImageView extends ImageView{
     public XCRoundRectImageView(Context context, AttributeSet attrs, int defStyle) {  
         super(context, attrs, defStyle); 
         paint  = new Paint();
-    }  
-  
+        setMaskAlpha(150);
+    }
+
+
+    /**
+     * 设置蒙层透明度
+     * @param alpha
+     */
+    public void setMaskAlpha(int alpha){
+        mAlpha = alpha;
+    }
+
     /**
      * 绘制圆角矩形图片
      * @author caizhiming
@@ -50,7 +63,11 @@ public class XCRoundRectImageView extends ImageView{
             final Rect rectSrc = new Rect(0, 0, b.getWidth(), b.getHeight());  
             final Rect rectDest = new Rect(0,0,getWidth(),getHeight());
             paint.reset();  
-            canvas.drawBitmap(b, rectSrc, rectDest, paint);  
+            canvas.drawBitmap(b, rectSrc, rectDest, paint);
+
+            //设置蒙层透明层
+            if(mAlpha > 0)
+                canvas.drawBitmap(getMaskRoundBitmap(bitmap, 20), rectSrc,rectDest, null);
   
         } else {  
             super.onDraw(canvas);  
@@ -84,7 +101,30 @@ public class XCRoundRectImageView extends ImageView{
         return output;  
         
         
-    }  
+    }
+    /**
+     * 创建蒙层透明层Bitmap
+     */
+    private Bitmap getMaskRoundBitmap(Bitmap bitmap, int roundPx) {
+        Bitmap output = Bitmap.createBitmap(
+                bitmap.getWidth(),bitmap.getHeight(),Bitmap.Config.ARGB_8888);
+        Canvas canvas = new Canvas(output);
+
+
+        final Rect rect = new Rect(0, 0, bitmap.getWidth(), bitmap.getHeight());
+        final RectF rectF = new RectF(rect);
+        paint.setAntiAlias(true);
+        canvas.drawARGB(0, 0, 0, 0);
+        paint.setColor(Color.TRANSPARENT);
+        paint.setAlpha(mAlpha);
+
+        canvas.drawRoundRect(rectF, roundPx, roundPx, paint);
+        paint.setXfermode(new PorterDuffXfermode(PorterDuff.Mode.DST_IN));
+        canvas.drawBitmap(bitmap, rect, rect, paint);
+        return output;
+
+
+    }
 }  
 
 
