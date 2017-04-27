@@ -1,4 +1,4 @@
-# XCSkin-Android Common UI Lib  
+# XCSkin-Android Common UI Lib    
 自己开发的Android App中常用的自定义UI库,主要包括了如下常用UI:
 
 圆环百分比进度条控件，  水平百分比进度条控件
